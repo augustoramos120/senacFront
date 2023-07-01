@@ -1,1 +1,330 @@
-*
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    height: 200px;    
+    background-image: url('../img/capa12.jpg');
+ 
+    background-position: center 0;
+    width: 80%;
+    background-repeat: no-repeat;
+}
+li{
+    list-style: none;
+}
+/*li:hover{
+    background-color: #FAD928;
+    border-radius: 15px;
+    width: 50px;
+    height: 20px;
+    position: center center;
+}
+*/
+.login:hover{
+    color: #FAD928;
+    border-style: solid;
+    background-color: #00686C;
+}
+.login{
+    background-color: #FAD928;
+    width: 90px;
+    padding: 0.2rem 1rem;
+    border-radius: 15px;
+    justify-content: center;
+    justify-items: center;
+    
+    
+}
+/*BAR escondido*/
+.btnlogin{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: #32C2B9;
+    position: center center;
+    font-size: 1.2em;
+}
+a:hover{
+    color: #FAD928;
+
+}
+/*Header*/
+header{
+    width: 100%;
+    position: relative;
+    padding: 0 9rem;
+    background-color: #00686C;
+}
+.navbar{
+
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: ;
+}
+.navbar .logo{
+    
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+.links{
+    padding: 0 9rem;
+}
+
+/*Banner*/
+
+.cardsbanner{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    width: 15%;
+    height: 31%;
+    justify-content: center;
+    justify-items: center;
+    color: #00686C;
+    margin-top: 0%;
+    padding-left: 7%;
+    padding-top: 7%;
+}
+.cardsbanner1 img{
+    margin-top: -20px;
+}
+.cardsbanner1{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    width: 13rem;
+    height: 10%;    
+    color: #00686C;
+    margin-left: 65%;
+    margin-top: 1%;
+    padding: 3rem 2rem 3rem 4rem;
+}
+.cardsbanner1 p{
+    font-size: 20px;
+    padding-left: 0px;
+    padding-right: 30px;
+    margin-bottom: 0%;
+    margin-top: -10%;
+    padding-bottom: 0%;
+}
+/*Container cards*/
+.container {
+    
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    padding: 0 9rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+/*CARDS primeiros*/
+.card {
+    z-index: 10;
+    margin-top: 13%;
+    width: 300px;
+    height: 280px;
+  
+    background-color: #fada28c9;
+    overflow: hidden;
+    box-shadow: 0px 1px 6px .5px rgba(0, 0, 0, 0.7);
+}
+
+
+/*CARD 2*/
+.card-2{
+    background-color: #32c2b8d5;
+}
+.card-2 p{
+    width: 40px;
+}
+.card-footer2{
+    margin-top: 16px; 
+    background-color: #FAD928;
+    text-align: center;
+}
+.card-footer2 a{  
+    color: #00686C;
+    display: block; 
+    padding: 16px;
+}
+/*CARD 3*/
+/*  CARD   3  */
+.card-3 .r{
+    width: 40px; 
+    height: 40px;
+    background-color: #fcfcfc; 
+    border-radius: 50%;
+}
+/*card transparente*/
+.card-3{
+    background-color: #32c2b8d0;
+}
+
+.card-footer3{
+    margin-top: 16px; 
+    background-color: #FAD928;
+    text-align: center;
+}
+.card-footer3 a{  
+    color: #00686C;
+    display: block; 
+    padding: 16px;
+}
+
+/*Card header*/
+.card-header{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.card-img{
+    min-width: 100%;
+    width: auto;  
+    height: 100%;
+}
+/* PRIMEIRO Card */
+.hiragana{ /* Estilo do texto dos cards*/
+    
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    font-weight: 500;
+    gap: .9rem;
+}
+.a{
+    background-color: #00686C;
+    color: #fcfcfc;
+    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+
+}
+.i{
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+}
+.u{
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+}
+.e{
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+}
+.o{
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+}
+/*CARD body*/
+.card-body p{
+    font-size: 28px;
+    font-weight: 600;
+    margin: 3px;
+    
+}
+.card-body h2{
+    padding: 5px;
+}
+.card-body{
+    color: #00686C;
+    height: 170px;
+    padding: 20px;
+    text-align: center;
+
+}
+.card-titulo{
+    margin: 10px 0;
+}
+.card-footer{
+    margin-top: 16px; 
+    background-color: #32C2B9;
+    text-align: center;
+}
+.card-footer a{  
+    color: #00686C;
+    display: block; 
+    padding: 16px;
+}
+hr {
+	width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40%;
+	text-align: right; /* Para o IE */
+ /* Para navegadores standard */
+	}
+
+    /*CARD 3*/
+.card-3 .card-body p{
+    margin: 2px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/*Conteiner de texto*/
+#container-footer-texto{
+    background-color: #d8ab19;
+}
+#container-footer-link{
+ background-color: #0f4d48;
+}
+.container-link{
+    
+}
+.container-texto{
+    color: rgba(0, 0, 0, 0.5);
+    margin: 2%;
+    width: 90%;
+    
+    display: flex;
+    gap: 1.5rem;   
+    padding: 0 9rem;
+    justify-content: center;
+    text-indent: 10%;
+    text-align: justify;
+  
+}
+.container-link a{
+    display: block;
+    text-align: right;
+}
+
+.numero{
+   
+    margin-right: 10%;
+    padding-right: 5%;
+}
+
+.frases{
+    justify-content: center;
+    color: #00686C;
+    
+    display: flex;
+}
+
+
+
+
+
+
+
