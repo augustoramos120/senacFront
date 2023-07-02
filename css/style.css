@@ -282,49 +282,200 @@ hr {
 }
 
 /*Conteiner de texto*/
-#container-footer-texto{
-    background-color: #d8ab19;
-}
-#container-footer-link{
- background-color: #0f4d48;
-}
-.container-link{
-    
-}
+
+/*TRES textos após od CARDS*/
 .container-texto{
     color: rgba(0, 0, 0, 0.5);
     margin: 2%;
-    width: 90%;
-    
+    width: 90%;    
     display: flex;
     gap: 1.5rem;   
-    padding: 0 9rem;
-    justify-content: center;
+    padding: 0 10rem;
+    justify-content:flex-start;
     text-indent: 10%;
     text-align: justify;
   
 }
+.container-texto{
+    font-size: 1em;
+}
+/* linkss SAIBA MAIS ... */
 .container-link a{
     display: block;
     text-align: right;
 }
+/* H1 do conteudo FRASE*/
+.frase{
+    margin-top: 3%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    margin-bottom: 8%;
+    margin-top: 8%;
+    color: #00686C;
+    padding: 0 9rem;  
+}
+.link-texto{
+    text-indent: 0%;
+    display: flex;    
+    justify-content: space-between;
 
-.numero{
-   
-    margin-right: 10%;
+}
+.saiba{
+    padding-top: 10%;
+    font-size: 1em;
     padding-right: 5%;
 }
-
-.frases{
-    justify-content: center;
-    color: #00686C;
+.saiba a{
+    font-size: .9em;
     
+}
+.saiba2{
+    padding-top: 15%;
+    font-size: 1em;
+}
+.saiba2 a{
+    font-size: .9em;
+}
+/*Conteudo centrais FRASES COM AUDIO*/
+.conteudo-um {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding: 0 9rem;
+
+
+  
+}
+/*classe do conteúdo da parte frases com audio*/
+.audio-conteudo{
+    position: absolute;
+    margin: 0;
+    padding: 0;
     display: flex;
+    align-content: center;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+/*classe da parte do botao play*/
+.audio-frase{
+    border: 1px solid rgb(71, 71, 75);
+    width: 48%;
+    color: #00686C;
+    text-align: center;
+}
+.audio-frase h3{
+    margin-top: 10px;
+}
+.audio-frase p{
+    font-weight:500;
+    font-size: 1.2em;
+    margin: 2%;
+}
+.audio-frase img{
+    width: 48px;
+}
+.audio-frase p h3{
+    align-items: center;
+    justify-content: center;    
+}
+.img-totoro{
+    position: relative;
+}
+.totoro{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 25%;
+    padding: 4% 0px 0px 2%;
+    width: 25%;
+    margin: 1% 3% 0px 0px;
+    position: absolute;
+    top: 35%;
+}
+.totoro p{
+    padding: 4% 0px 0px 2%;
+    font-size: 1.5em;
+    color: #00686C;
+    font-weight: 500;
 }
 
+/*Segundo Conteudo*/
+.frase-dois{
+    margin-top: 3%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    margin-bottom: 8%;
+    margin-top: 8%;
+    color: #00686C;
+    padding: 0 9rem;  
+}
+.conteudo-dois{
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding: 0 9rem;
 
 
+    margin-top: 40%;
+    padding: 0;
+    padding: 0 9rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
 
-
-
-
+.audio-conteudo-dois{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+.audio-frase-dois{
+    border: 1px solid rgb(71, 71, 75);
+    width: 48%;
+    color: #00686C;
+    text-align: center;
+}
+.audio-frase-dois h3{
+    margin-top: 10px;
+}
+.audio-frase-dois p{
+    font-weight:500;
+    font-size: 1.2em;
+    margin: 3%;
+}
+.audio-frase-dois img{
+    width: 48px;
+}
+.audio-frase-dois p h3{
+    align-items: center;
+    justify-content: center;    
+}
+.deathnote{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 25%;
+    padding: 4% 0px 0px 2%;
+    width: 25%;
+    margin: 1% 3% 0px 0px;
+    position: absolute;
+    top: 35%;
+    padding-left: 2%;
+    margin-left: 22%;
+    
+}
+.deathnote p{
+    padding: 4% 0px 0px 2%;
+    font-size: 1.5em;
+    color: #00686C;
+    font-weight: 500;
+    text-align: right;
+    padding-right: 15%;
+    font-weight: 600;
+ 
+}
