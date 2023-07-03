@@ -1,19 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    
 }
 
 body{
-    height: 200px;    
+
     background-image: url('../img/capa12.jpg');
- 
     background-position: center 0;
     width: 80%;
     background-repeat: no-repeat;
 }
 li{
     list-style: none;
+}
+.card-1 a:hover{
+    background-color: #FAD928;
+    color: #00686C;
+}
+.card-2 a:hover{
+    background-color: #32C2B9;
+}
+.card-3 a:hover{
+    background-color: #32C2B9;
 }
 /*li:hover{
     background-color: #FAD928;
@@ -23,10 +34,32 @@ li{
     position: center center;
 }
 */
+
+/*Barra de pesquisa*/
+.search-container input[type="text"]{
+    color: #e4e114;
+}
+.search-container {
+    
+    margin-top: 50px;
+    padding-bottom: 55px;
+  }  
+  input[type="text"] {
+    margin-left: 40%;
+    color: #FAD928;
+    background-color: #00686C;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #FAD928;
+    border-radius: 20px;
+
+  }  
+
 .login:hover{
     color: #FAD928;
-    border-style: solid;
+    border:#FAD928 solid 1px;
     background-color: #00686C;
+    margin: -1px;
 }
 .login{
     background-color: #FAD928;
@@ -35,18 +68,20 @@ li{
     border-radius: 15px;
     justify-content: center;
     justify-items: center;
-    
+    transition: all 300ms ease;
     
 }
 /*BAR escondido*/
 .btnlogin{
     display: none;
 }
+/*Links da barra principal header*/
 a{
     text-decoration: none;
     color: #32C2B9;
     position: center center;
     font-size: 1.2em;
+    transition: all 200ms ease;
 }
 a:hover{
     color: #FAD928;
@@ -54,9 +89,10 @@ a:hover{
 }
 /*Header*/
 header{
+
     width: 100%;
-    position: relative;
-    padding: 0 9rem;
+    position: absolute;
+    padding: 0;
     background-color: #00686C;
 }
 .navbar{
@@ -64,11 +100,11 @@ header{
     width: 100%;
     height: 60px;
     max-width: 1200px;
-    margin: 0;
+    padding-bottom: 3px;
+    padding-top: 1px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    justify-content: ;
 }
 .navbar .logo{
     
@@ -78,11 +114,11 @@ header{
     gap: 2rem;
 }
 .links{
-    padding: 0 9rem;
+    padding: 0 16rem;
 }
 
 /*Banner*/
-
+/*Cards tranparentes no banner capa*/
 .cardsbanner{
     position: absolute;
     background-color: rgba(255, 255, 255, 0.5);
@@ -99,6 +135,7 @@ header{
 .cardsbanner1 img{
     margin-top: -20px;
 }
+/*Card transparente no banner capa kanji*/
 .cardsbanner1{
     position: absolute;
     background-color: rgba(255, 255, 255, 0.5);
@@ -111,6 +148,7 @@ header{
     padding: 3rem 2rem 3rem 4rem;
 }
 .cardsbanner1 p{
+    color: #00686C;
     font-size: 20px;
     padding-left: 0px;
     padding-right: 30px;
@@ -118,10 +156,11 @@ header{
     margin-top: -10%;
     padding-bottom: 0%;
 }
-/*Container cards*/
+/*Container cards*/  /*espacamento dos cards e head*/
 .container {
-    
-    margin-top: 5%;
+    margin-bottom: 0%;
+    margin-top: 1%;
+    padding-bottom: 20%;
     width: 100%;
     display: flex;
     padding: 0 9rem;
@@ -129,19 +168,30 @@ header{
     justify-content: center;
     gap: 3rem;
 }
+.container, .card-1, .card-2, .card-3{
+    margin-top: 10%;
+    margin-bottom: 1%;
+}
+.container-texto p{
+    color:#808080 ;
+}
+.link-texto{
+    color: #808080;
+}
+.conteudo-um p, .conteudo-dois p, .conteudo-tres p{
+    color: #00686C;
+
+}
 /*CARDS primeiros*/
 .card {
     z-index: 10;
     margin-top: 13%;
     width: 300px;
-    height: 280px;
-  
+    height: 280px;  
     background-color: #fada28c9;
     overflow: hidden;
     box-shadow: 0px 1px 6px .5px rgba(0, 0, 0, 0.7);
 }
-
-
 /*CARD 2*/
 .card-2{
     background-color: #32c2b8d5;
@@ -158,6 +208,7 @@ header{
     color: #00686C;
     display: block; 
     padding: 16px;
+    transition: all 00ms ease;
 }
 /*CARD 3*/
 /*  CARD   3  */
@@ -196,14 +247,13 @@ header{
 }
 /* PRIMEIRO Card */
 .hiragana{ /* Estilo do texto dos cards*/
-    
     justify-content: center;
     display: flex;
     font-size: 30px;
     font-weight: 500;
     gap: .9rem;
 }
-.a{
+.card-body .a{
     background-color: #00686C;
     color: #fcfcfc;
     border-radius: 50%;
@@ -237,12 +287,14 @@ header{
 }
 /*CARD body*/
 .card-body p{
+    color: #00686C;
     font-size: 28px;
     font-weight: 600;
     margin: 3px;
     
 }
 .card-body h2{
+    color: ;
     padding: 5px;
 }
 .card-body{
@@ -283,7 +335,7 @@ hr {
 
 /*Conteiner de texto*/
 
-/*TRES textos após od CARDS*/
+/*TRES textos após os CARDS*/
 .container-texto{
     color: rgba(0, 0, 0, 0.5);
     margin: 2%;
@@ -296,9 +348,39 @@ hr {
     text-align: justify;
   
 }
+/*explicaçao da pronuncia*/
+.significado {
+    display: flex;
+    padding-top: 0px;
+    margin-top: -20px;
+    margin-left: 40px;
+}
+.iconeplay{
+    cursor: pointer;
+}
+.nani{
+    margin-bottom: 0px;
+}
+/*cores na explicaçao*/
+.vermelho{
+    color: #c00c0c;
+}
+.verde{
+    color: #30c573;
+}
+.azul{
+    color: #3a30c5;
+}
+.rosa{
+    color: #e9559a;
+}
+.roxo{
+    color: #a81f9d;
+}
 .container-texto{
     font-size: 1em;
 }
+
 /* linkss SAIBA MAIS ... */
 .container-link a{
     display: block;
@@ -343,12 +425,10 @@ hr {
     margin: 0;
     padding: 0;
     padding: 0 9rem;
-
-
-  
+    
 }
 /*classe do conteúdo da parte frases com audio*/
-.audio-conteudo{
+.audio-conteudo-um{
     position: absolute;
     margin: 0;
     padding: 0;
@@ -357,10 +437,11 @@ hr {
     width: 100%;
     align-content: center;
     justify-content: center;
+    height: 275px;
+    border: 3px solid rebeccapurple;
 }
 /*classe da parte do botao play*/
 .audio-frase{
-    border: 1px solid rgb(71, 71, 75);
     width: 48%;
     color: #00686C;
     text-align: center;
@@ -380,9 +461,8 @@ hr {
     align-items: center;
     justify-content: center;    
 }
-.img-totoro{
-    position: relative;
-}
+
+/*Nome Meu Amigo Totoro fundo transpanrente*/
 .totoro{
     background-color: rgba(255, 255, 255, 0.5);
     height: 25%;
@@ -396,10 +476,11 @@ hr {
     padding: 4% 0px 0px 2%;
     font-size: 1.5em;
     color: #00686C;
-    font-weight: 500;
+    font-weight: 600;
 }
 
-/*Segundo Conteudo*/
+/*Segundo Conteudo Frases de Anime*/
+
 .frase-dois{
     margin-top: 3%;
     align-items: center;
@@ -410,22 +491,19 @@ hr {
     color: #00686C;
     padding: 0 9rem;  
 }
+/*H2 FRSES DE ANIME*/
 .conteudo-dois{
-
     position: relative;
     margin: 0;
     padding: 0;
     padding: 0 9rem;
-
-
-    margin-top: 40%;
+    position: relative;
+    margin: 0;
     padding: 0;
     padding: 0 9rem;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+    margin-top: 40%;
 }
-
+/*Conteudo de segundo card do meio*/
 .audio-conteudo-dois{
     position: absolute;
     margin: 0;
@@ -436,27 +514,34 @@ hr {
     align-content: center;
     justify-content: center;
 }
+/*Conteudo do segundo card*/
 .audio-frase-dois{
     border: 1px solid rgb(71, 71, 75);
     width: 48%;
+    height: 273px;
     color: #00686C;
     text-align: center;
 }
 .audio-frase-dois h3{
     margin-top: 10px;
 }
+#autor{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: right;
+    font-weight: bold;
+}
 .audio-frase-dois p{
     font-weight:500;
     font-size: 1.2em;
     margin: 3%;
 }
-.audio-frase-dois img{
-    width: 48px;
-}
+
 .audio-frase-dois p h3{
     align-items: center;
     justify-content: center;    
 }
+/*nome Death Note fundo transparente*/
 .deathnote{
     background-color: rgba(255, 255, 255, 0.5);
     height: 25%;
@@ -479,3 +564,146 @@ hr {
     font-weight: 600;
  
 }
+/* Terceiro Conteudo Cultura Niponica*/
+/* He CULTURA NIPONICA*/
+.conteudo-cultura{
+    margin-top: 3%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    margin-bottom: 8%;
+    margin-top: 8%;
+    color: #00686C;
+    padding: 0 9rem;
+    
+}
+.conteudo-tres{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding: 0 9rem;
+    margin-top: 40%;
+}
+.cultura-conteudo-tres{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    height: 275px;
+}
+
+.cultura-frase-tres{
+    border: 1px solid rgb(71, 71, 75);
+    width: 48%;
+    color: #00686C;
+    text-align: center;
+}
+.cultura-conteudo-tres h3{
+    margin-top: 10px;
+}
+.cultura-conteudo-tres p{
+    font-weight:500;
+    font-size: 1.2em;
+    margin: 3%;
+}
+.audio-frase-tres p h3{
+    align-items: center;
+    justify-content: center;    
+}
+/*Nome Tokyo fundo transparente*/
+.tokyo{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 25%;
+    padding: 3% 0px 0px 0%;
+    width: 25%;
+    margin: 1% 3% 0px 1%;
+    position: absolute;
+    top: 35%;    
+    padding-left:2%;
+    margin-left: 22%;    
+}
+.tokyo p{
+    padding: 1% 5% 0px 0px;
+    font-size: 1.5em;
+    color: #00686C;
+    font-weight: 500;
+    text-align: right;
+    padding-right: 15%;
+    font-weight: 600; 
+}
+
+/*Footer*/
+.footer-pagina{
+    position: absolute;
+    width: 100%;
+    background-color: #00686C;
+    text-align: center;
+    margin-top: 30%;
+}
+.footer-pagina .grupo-1{
+    padding-top: 90px;
+    width: 100%;
+    padding: 0 90px 0 0;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+/*Centralizar o logo no footer*/
+.footer-pagina .grupo-1 .box img{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*estilizar textos*/
+.footer-pagina .grupo-1 .box h2, p{
+    color: #d3d1d1;
+}
+.footer-pagina .grupo-1 .box h2{
+    color: #d3d1d1;
+    margin: 10px;
+    font-size: 20px;
+}
+/*Icones redes sociais*/
+
+.footer-pagina .grupo-1 .box .rede-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #00686C;
+    margin-right: 10px;
+    align-items: center;
+    background-color: #32C2B9;
+    text-align: center;
+    border-radius: 7px;
+}
+.footer-pagina .grupo-1 .box .rede-social a:hover{
+    color:#e4e114;
+}
+.footer-pagina .grupo-2{
+    background-color: #32C2B9;
+    padding: 15px;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+
+
+
+
+
+
+
+
+
+

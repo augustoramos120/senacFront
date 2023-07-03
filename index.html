@@ -4,16 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="" href="js/script.js">
+   <script type="text/javascript" src="js/script.js"></script>
+  <!---  <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css -->
+
+
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
     <link rel="icon" href="icons/logonipo.png">
     <title>Nipoinside</title>
+
 </head>
 <body>
+
     <header>
         <div class="navbar">
 
             <div class="logo"><a href="index.html"><img src="img/logosembg.png" alt="" class=""></a></div>
             
+<!--Barra de pesquisa-->
+        <div class="buscar">
+            <div class="search-container">
+                <form>
+                  <input type="text" placeholder="Pesquisar tema">
+                </form>
+            </div>
+        </div>
+<!--Barra de menu-->
         <ul class="links">
             <li><a href="index.html">Home</a></li>
             <li><a href="cards.html">Cards</a></li>
@@ -27,20 +47,21 @@
         
     </header>
     <!-- CARDS transparentes-->
-    <main class="transparente">
+    <div class="transparente">
         <div class="cardsbanner">
             <h2>日本語</h2><br>
             <h2>にほんご</h2>
         </div>
         <div class="cardsbanner1">
-            <p>Aprenda japonês</p><br>
-            <img src="img/kanjijapan.png" >
+            <a href="#"><p>Aprenda japonês</p><br></a>
+            <a href="#"><img src="img/kanjijapan.png" ></a>
+            
         </div>
-    </main>
+    </div>
 
-    <div class="container">
+    <main class="container">
 
-        <!--Card 1-->
+            <!--Card 1-->
         <div class="card card-1">
 
             <!---Card-body-->
@@ -108,6 +129,7 @@
 
 
         <!--Card 3-->
+        <!---CARd-->
         <div class="card card-3">
 
             <!---Card-body-->
@@ -140,7 +162,7 @@
         </div>
         <!--Card 3-->
        
-    </div>
+    </main>
     <br><br>
     <hr/>
 
@@ -153,14 +175,14 @@
               pelas quais aprender japonês com áudio pode ser benéfico:<br><br>
             <div class="link-texto">
             Prática.<br>
-            Compreenção.<br>
-            Aprendizado.<br>
+            Compreenção rápida.<br> 
+            Aprendizado nativo.<br>
             <div class="saiba">
             <a href="#">Saiba mais</a> 
             </div>
             </div>
         </p>
-        </div>
+        </div> 
 <!--segundo texto do corpo-->
         <div class="container-link">
             <div class="container-link">
@@ -172,7 +194,7 @@
                  Repita as falas. <br>
                  Pratique diálogos <br>
                 <div class="saiba2">
-                <a href="#">Saiba mais</a> 
+                <a href="#">Saiba mais</a>
                 </div>
                 </div>
             </p>
@@ -204,15 +226,25 @@
     <!--Parte do conteudo FRASES COM AUDIO-->
     <section class="conteudo-um">
     <h2 class="frase">Frases com Áudio</h2>
-        <div class="audio-conteudo">
+        <div class="audio-conteudo-um">
             <div class="audio-frase">
                 <h3>Áudio com Frases</h3>
                 <p>何事も始めるのに遅すぎるということはない。</p>
                 <p>(なにごともはじめるのにおそすぎるということはない)</p>
-                <p>Nanigotomo hajimeru no ni ososugiru to iu koto wa nai.</p>
-                <p>Nunca é tarde para começar algo.</p>
-                <a href="#"><img src="icons/playbutton.png" alt="icone de um play"></a>
+                    
+                    <p><span class="vermelho">Nanigotomo</span> <span class="verde">hajimeru</span> no ni <span class="azul">ososugiru</span> <span class="rosa">to iu</span> <span class="roxo">koto wa nai.</p></span>
 
+                    <div class="significado">                        
+                    <p><span class="vermelho">nada</p></span><p><span class="verde">começar</p></span><p><span class="azul">tarde demais</p></span><p><span class="rosa">dizer</p></span><p><span class="roxo">algo</p></span>  
+                    </div>
+                <p>Nunca é tarde para começar algo.</p>
+
+<!--PLAY DO AUDIO-->
+
+<div class="iconeplay">
+<img src="icons/playbutton.png" alt="" onclick="playAudio()">
+</div>
+<i class="fa-regular fa-user"></i>
             </div>
             <div class="img-frase">
                 <figure>
@@ -243,7 +275,7 @@
                         <p>“O mundo não pode ser mudado
                             apenas  por palavras bonitas”</p>
                       </blockquote>
-                      <p>Lelouch Lamperouge - Code Geass</p>
+                      <p id="autor">Lelouch Lamperouge - Code Geass</p>
                       <!--O caractere U+2028 "" pode ser confundido com o 
                         caractere ASCII U+0020, que é mais comum no código-fonte.
                          Ajustar configurações-->
@@ -256,34 +288,62 @@
         </section>
 
             <!--outra parte CULTURA NIPONICA-->
-    <section class="conteudo-dois">
-        <h2 class="frase-dois">Cultura Nipônica</h2>
-            <div class="audio-conteudo-dois">
-                
-                <div class="">
+    <section class="conteudo-tres">
+        <h2 class="conteudo-cultura">Cultura Nipônica</h2>
+            <div class="cultura-conteudo-tres">                
+                <div class="img-tokyo">
                     <figure>
-                    <img src="img/death-note.png" class="img-death-note" alt="anime: meu amigo Totoro">
-                    <figcaption class="deathnote"><p>Tokyo</p></figcaption>
+                    <img src="img/tokyo.png" class="img-death-note" alt="anime: meu amigo Totoro">
+                    <figcaption class="tokyo"><p>Tokyo</p></figcaption>
                     </figure>                
                 </div>   
                 
-                <div class="audio-frase-dois">
+                <div class="cultura-frase-tres">
                     <h3>Conheça a cultura Nipônica</h3>
-                    <blockquote cite="http://developer.mozilla.org">
-                        <p>“O mundo não pode ser mudado
-                            apenas  por palavras bonitas”</p>
-                      </blockquote>
-                      <!--O caractere U+2028 "" pode ser confundido com o 
-                        caractere ASCII U+0020, que é mais comum no código-fonte.
-                         Ajustar configurações-->
-                    <p> 「世界は変えられない 美しい言葉だけに 」</p>
-                    <p>Nanigotomo hajimeru no ni ososugiru to iu koto wa nai.</p>
-                    <p>Nunca é tarde para começar algo.</p>
-                   
+                    <p>As pessoas com ascendência japonesa
+                        que nasceram em outros países 
+                       são denominadas nikkeis.</p>
+                    <p>日本文化 <br> (にほんぶんか)<br>
+                        Nipponbunka</p>
+                    <p>Tokyo é frequentemente associada ao estilo e
+                         estética cyberpunk devido à sua combinação única,
+                          com uma paisagem urbana futurista. </p>                                      
                 </div>
             </div>
         </section>
-
+        <footer class="footer-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="img/logosfundo.png" alt="logo nipoinside">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>Sobre o Nipoinside</h2>
+                    <p>Aprender o idioma</p>
+                    <p>Conhecendo a cultura do Japão</p>
+                </div>
+                <div class="box">
+                    <h2>Nassas redes</h2>
+                    <div class="rede-social">
+                        <a href="#" class="fa-brands fa-instagram"></a>
+                        <a href="#" class="fa-brands fa-square-facebook"></a>
+                        <a href="#" class="fa-brands fa-youtube"></a>
+                        <a href="#" class="fa-brands fa-square-twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2023 <b>Nipoinside</b> - Todos os direitos reservados.</small>
+            </div>
+        </footer>
 
 </body>
 </html>
+
+
+
+
+
