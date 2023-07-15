@@ -40,6 +40,7 @@ nav{
     display: none;
 
 }
+
 .nav-list ul{
     display: flex;
     list-style: none;
@@ -95,7 +96,6 @@ a:hover{
     color: #FAD928;
 
 }
-
 /* Outra maneira de inserir a capa do site
 main{
     background: url("img/capa12.jpg") no-repeat
@@ -164,6 +164,11 @@ main{
 }
 
 
+
+.card{
+    height: 200%;
+    width: 120%;
+}
 .card h2{
     color: #055457;
 }
@@ -185,10 +190,10 @@ aside.cards  section.card{
     background: #32c2b8d5;
     padding: 1rem .5rem;
     border-radius: 5px;
-    max-height: 220px;
-    max-width: 110px;
-    min-width: 50px;
-    margin-left: 20px;
+    max-height: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    margin-left: 35px;
     box-shadow: 0px 1px 6px .5px rgba(0, 0, 0, 0.7);
     padding: 130px 120px;
     
@@ -218,7 +223,7 @@ aside.cards section.card h2{
     margin-top: 4px;
 }
 
- .hiragana .a{
+ .a{
     background-color: #00686C;
     color: #fcfcfc;
     align-items: center;
@@ -276,9 +281,9 @@ aside.cards section.card h2{
     font-weight: 600;
     background-color: #fada28;
     border-radius: 5px;
-    padding: 15px 80px 8px 80px;
+    padding: 15px 80px 10px 80px;
     margin-top: 10px;
-    margin-bottom: 9px;
+    margin-bottom: 5px;
 }
 
 
@@ -460,13 +465,13 @@ figcaption {
     text-decoration: none;
     width: 40px;
     height: 40px;
-    margin-bottom: 10px;
     line-height: 40px;
     color: #00686C;
     margin-right: 10px;
     align-items: center;
     background-color: #32C2B9;
     text-align: center;
+    margin-bottom: 10px;
     border-radius: 7px;
 }
 .footer-pagina .grupo-1 .box .rede-social a:hover{

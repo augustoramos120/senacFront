@@ -1,7 +1,15 @@
-// Função play musica
+function menushow(){
+    let menuMobile = document.querySelector('.mobile-menu');
+    if(menuMobile.classList.contains('open')){
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = ".icons/baricon.png";
+    }else {
+        menuMobile.classList.add('open');
+        document.querySelector('.icon').src = ".icons/close.png";
+    }
+}
 
-  //var audio = document.getElementById('audio');
-  //var playPauseBTN = document.getElementById('playPauseBTN');
+
   //var count = 0;
 
   //function playPause(){
@@ -28,11 +36,3 @@
    // }else{
      //   count = 0;
      //   audio.pause();
-
-
-
-
-
-
-
-

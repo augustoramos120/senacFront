@@ -1,0 +1,118 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+/*Header NAV*/
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: #00686C;
+}
+
+.banner img{
+    width: 100%;
+  
+
+}
+.topo{
+    margin-top: -5px0;
+    padding-top: -50;
+    position: absolute;
+    
+}
+.barra-topo{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    margin: o 16px;
+}
+
+
+aside.cards{
+    display: flex;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, .5);
+    
+}
+aside.cards section.card{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #32c2b8d5;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    max-height: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    margin-left: 30px;
+    box-shadow: 0px 1px 6px .5px rgba(0, 0, 0, 0.7);
+    
+}
+aside.cards section.card:first-child{
+    background-color: #FAD928;
+    margin-left: 0;
+    min-width: 250px;
+    margin: 0px;
+ 
+
+}
+
+aside.cards section.card h2{
+    margin: 16px 45px;
+    font-size: 100%;
+}
+/*Primeiro card*/
+
+.hiragana{ /* Estilo do texto dos cards*/ 
+    justify-content: center;
+    color: ;
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    gap: .2rem;
+    padding-top: 3px;
+    margin-top: 4px;
+}
+ .a{
+    background-color: #00686C;
+    color: #fcfcfc;
+    align-items: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 30px;
+  
+}
+.i, .u, .e, .o{
+    background-color: aliceblue;
+    border-radius: 50%;
+    padding-bottom: 3px;
+    width: 35px;
+    height: 30px;
+}
+
+/*Card footer*/
+.card-footer1{
+    background-color: #44c6e7;
+    width: 120%;
+    height: 20%;
+    border-radius: 5px;
+}
