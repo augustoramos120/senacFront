@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
+
 }
 
 
@@ -22,8 +24,9 @@ nav{
     border: none;
     background-color: #FAD928;
     color: #00686C;
-    padding: 7px 15px;
+    padding: 5px 15px;
     border-radius: 15px;
+    font-weight: 500;
 }
 .login-button button:hover{
     color: #e4e114;
@@ -40,7 +43,6 @@ nav{
     display: none;
 
 }
-
 .nav-list ul{
     display: flex;
     list-style: none;
@@ -96,6 +98,7 @@ a:hover{
     color: #FAD928;
 
 }
+
 /* Outra maneira de inserir a capa do site
 main{
     background: url("img/capa12.jpg") no-repeat
@@ -110,106 +113,84 @@ main{
     width: 100%;
  
 }
+.banner{
+    position: relative;
+}
 
+.texto-banner {
+    position: absolute;
+    top: 30%;
+
+    width: 20%;
+    right: 8%;
+    transform: translate(-50%, -50%);
+    color: #00686C;
+    font-size: 54px;
+    text-align: center;
+  }
+.figura-banner{
+    position: absolute;
+    top: 49%;
+    background-color: #8585858c;
+    height: 97%;
+    width: 18%;
+    right: 65%;
+    transform: translate(-50%, -50%);
+    color: #00686C;
+    font-size: 54px;
+    text-align: center;
+}
+.texto-banner p{
+    color: #05979c;
+    font-size: 35px;
+}
 .topo{
     margin-top: -5px;
     padding-top: -50;
-    position: absolute;
-    
-}
-.barra-topo{
-    display: flex;
-    justify-content: space-between;
-    margin: auto 30px;
-}
-/*Cards tranparentes no banner capa*/
-.cardsbanner{
-   
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    width: 15%;
-    padding-top: 0;
-    justify-content: center;
-    justify-items: center;
-    color: #00686C;
-
+    position: absolute;    
 }
 
-.cardsbanner h2{
+/*Cards primeiro*/
 
-}
-.cardsbanner1 img{
-    margin-top: -20px;
-}
-/*Card transparente no banner capa kanji*/
-.cardsbanner1{
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    width: 13rem;
-    height: 10%;    
-    color: #00686C;
-    margin-left: 65%;
-    margin-top: 1%;
-    padding: 3rem 2rem 3rem 4rem;
-}
-.cardsbanner1 p{
-    color: #00686C;
-    font-size: 20px;
-    padding-left: 0px;
-    padding-right: 30px;
-    margin-bottom: 0%;
-    margin-top: -10%;
-    padding-bottom: 0%;
-}
-
-
-
-.card{
-    height: 200%;
-    width: 120%;
-}
 .card h2{
     color: #055457;
 }
-.cards{
-
+.card-body{
+    width: 220px;
+    padding: -50px;
+    margin: 9px;
+}
+.cards{   
     justify-content: center;
     display: flex;
     align-items: center;
-    height: 18vh;
-
+    height: 1vh;
 }
 
 aside.cards  section.card{
+    width: 90%;
+    height: 2%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background: #32c2b8d5;
-    padding: 1rem .5rem;
     border-radius: 5px;
-    max-height: 250px;
-    max-width: 250px;
-    min-width: 250px;
-    margin-left: 35px;
+
+    margin-left: 20px;
     box-shadow: 0px 1px 6px .5px rgba(0, 0, 0, 0.7);
-    padding: 130px 120px;
-    
-}
-aside.cards  section.card:first-child{
+    padding: 120px 140px;
+    z-index: 3;
     background-color: #fada28b6;
     margin-left: 0;
-    min-width: 250px;
-    margin: 0px;
- 
 }
 
+
 aside.cards section.card h2{
-    margin: 16px 45px;
-    font-size: 100%;
-    margin: 6px;
+    font-weight: 900;
+    font-size: 140%;
+    margin: 5px;
 }
 /*Primeiro card*/
 
@@ -219,11 +200,11 @@ aside.cards section.card h2{
     font-size: 20px;
     font-weight: 500;
     gap: .2rem;
-    padding-top: 3px;
-    margin-top: 4px;
+    padding-top: 1px;
+    margin-top: 1px;
 }
 
- .a{
+ .hiragana .a{
     background-color: #00686C;
     color: #fcfcfc;
     align-items: center;
@@ -241,187 +222,107 @@ aside.cards section.card h2{
     height: 30px;
 }
 
-.card-3 .r{
-    font-size: 18px;
-    font-weight: 400;
-    width: 30px; 
-    height: 30px;
-    background-color: #fcfcfc; 
-    border-radius: 50%;
-}
-/* terceiro card */
-.card-body p{
-    font-size: 16px;
-    color: #00686C;
-    font-weight: bold;
-}
-
 /*Card footer*/
 /* Link dos CARDS */
 .card-footer-1 a{
     position: relative;
     text-decoration: none;    
-    margin: 2px 10px;
+    margin: 2px 20px;
     display: flex;
     color: #4d4d4d;
     font-weight: 600;
-    background-color: #44c6e7;
+    background-color: #53CCC3;
     border-radius: 5px;
-    padding: 15px 80px 10px 80px;
+    padding: 15px 115px 10px 115px;
     margin-top: 10px;
 }
+.container-conteudo p{
+    color: #5f5f5f;
+}
+.container-conteudo{
 
-
-.card-footer-2 a{
+   
+}
+/* TABELA HIRAGANA*/
+.tabela-hiragana{
+    border-collapse: collapse;
+    min-width: 500px;
+    max-width: 100%;
+    color: #00686C;
     position: relative;
-    text-decoration: none;
-    margin: 2px 10px;
-    display: flex;
-    color: #4d4d4d;
-    font-weight: 600;
-    background-color: #fada28;
-    border-radius: 5px;
-    padding: 15px 80px 10px 80px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-
-.card-footer-3 a{
-    position: relative;
-    text-decoration: none;
-    margin: 2px 10px;
-    display: flex;
-    color: #4d4d4d;
-    font-weight: 600;
-    background-color: #fada28;
-    border-radius: 5px;
-    padding: 15px 80px 10px 80px;
-    margin-top: 10px;
-}
-
-/* Container de 3 Textos*/
-.container-texto{
-    border: solid 1px #edd;
-    display: flex;
-    justify-content: center; /* Centralizar horizontalmente */
-    align-items: center; /* Centralizar verticalmente */
-    height: 70vh;
-    width: 70vh;
-    margin: 2%;
-    width: 100%;    
-    display: flex;
-     padding-top: 10%;
-     margin: 0;
-  
-    text-indent: 10%;
-    text-align: justify;
-    
-}
-.container-link{
-    flex: 1;
-    padding: 20px;
- 
-    max-width: 270px;
-    margin: 15px;  
-}
-.container-link p{
-    color: #636363;
-}
-.link-texto{
-    color: #636363;
-    text-indent: 0;
-}
-
-.first-letter-styling::first-letter {
-    font-size: 45px; /* Tamanho de fonte para a primeira letra */
-    color: #05979c; /* Cor da primeira letra */
-    font-weight: bold; /* Estilo de fonte para a primeira letra */
-
-  }
-  .saiba{
-    margin-top: -25px;
-    float: right;
-  }
-  .saiba a{
-    font-size: 14px;
-    background-color: #05979c;
-    width: 90px;
-    color: #fff;
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
-  }
-
-  /*Conteudo do audio card central*/
-
-  .frase{
-    text-align: center;
-  }
-
-
-.totoro p{
- 
-    margin-bottom: 90px;
-}
-.img-totoro{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.img-container{
-    position: relative;
-  }
-figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 30%;
-    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo da legenda */
-    color: #fff; /*Cor do texto da legenda */
-    padding: 1px; /* Espaçamento interno da legenda */
-  }
- 
-  .significado {
-    margin-left: 40px;
-    padding-left: 30px;
-    margin: 10px;
-    display: flex;
-    padding-top: 0px;
+    margin-top: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 0;
+    margin-bottom: 0;
 
 }
-.iconeplay img{
-    width: 30px;
-    height: 30px;
-  }
-  .img-totoro{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.container-box {
-
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-
-  }
-  
-  .box-um {   
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ccc;
+.tabela-hiragana th{
     padding: 10px;
-    width: 700pxpx;
-  }
+    font-size: 1.1em;
+}
+.tabela-hiragana td{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.container-titulo h2{
+    font-size: 2em;
+    margin-top: 20%;
+    color: #00686C;
+    position: relative;
+    transform: translate(-50%, -50%);
+    margin-top: 8%;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+}
+.container-titulo h3{
+    font-size: 2em;
+    letter-spacing: 6px;
+    margin-top: 0;
+    padding-bottom: 6px;
+}
+
+.container-conteudo p, h3{
+   color: #666;
+   min-width: 500px;
+    max-width: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    margin-top: 2%;
+    margin-bottom: 20px;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    text-align: center;
+}
+.container-conteudo p:last-child{ /*Ultimo elemento filho*/
+    padding-bottom: 30px;
+}
+.container-conteudo p:nth-child(4){ /*  Quarto elemento filho*/
+    margin-top: -80px;
+    padding-top: 0;
+}
+.container-conteudo h3{
+    color: #00686C;
+}
+span.dakuten{
+    font-size: 24px;
+}
 
 
-
-
+.btn-final p{
+    margin: 5px 0;
+    padding: 5px 0;
+    background-color: #e4e114;
+    color: #00686C;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    align-items: center;
+}
 /*Footer*/
 .footer-pagina{
     position: absolute;
@@ -465,13 +366,13 @@ figcaption {
     text-decoration: none;
     width: 40px;
     height: 40px;
+    margin-bottom: 10px;
     line-height: 40px;
     color: #00686C;
     margin-right: 10px;
     align-items: center;
     background-color: #32C2B9;
     text-align: center;
-    margin-bottom: 10px;
     border-radius: 7px;
 }
 .footer-pagina .grupo-1 .box .rede-social a:hover{
