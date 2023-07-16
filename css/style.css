@@ -174,28 +174,12 @@ main{
 .cardsbanner1 img{
     margin-top: -20px;
 }
-/*Card transparente no banner capa kanji
-.cardsbanner1{
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    width: 13rem;
-    height: 10%;    
-    color: #00686C;
-    margin-left: 65%;
-    margin-top: 1%;
-    padding: 3rem 2rem 3rem 4rem;
+
+/* link dos cards hiragana */
+.card a:hover{
+    background-color: #05979c;
+
 }
-.cardsbanner1 p{
-    color: #00686C;
-    font-size: 20px;
-    padding-left: 0px;
-    padding-right: 10px;
-    margin-bottom: 0%;
-    margin-top: -10%;
-    padding-bottom: 0%;
-}
-*/
 
 .card h2{
     color: #055457;

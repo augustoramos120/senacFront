@@ -242,7 +242,87 @@ aside.cards section.card h2{
 
 
 
+/* TABELA HIRAGANA*/
+.tabela-hiragana{
+    border-collapse: collapse;
+    min-width: 500px;
+    max-width: 100%;
+    color: #00686C;
+    position: relative;
+    margin-top: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 0;
+    margin-bottom: 0;
 
+}
+.tabela-hiragana th{
+    padding: 10px;
+    font-size: 1.1em;
+}
+.tabela-hiragana td{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.container-titulo h2{
+    font-size: 2em;
+    margin-top: 20%;
+    color: #00686C;
+    position: relative;
+    transform: translate(-50%, -50%);
+    margin-top: 8%;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+}
+.container-titulo h3{
+    font-size: 2em;
+    letter-spacing: 6px;
+    margin-top: 0;
+    padding-bottom: 6px;
+}
+
+.container-conteudo p, h3{
+   color: #666;
+   min-width: 500px;
+    max-width: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    margin-top: 2%;
+    margin-bottom: 20px;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    text-align: center;
+}
+.container-conteudo p:last-child{ /*Ultimo elemento filho*/
+    padding-bottom: 30px;
+}
+.container-conteudo p:nth-child(4){ /*  Quarto elemento filho*/
+    margin-top: -80px;
+    padding-top: 0;
+}
+.container-conteudo h3{
+    color: #00686C;
+}
+
+span.dakuten{
+    font-size: 24px;
+}
+
+
+.btn-final p{
+    margin: 5px 0;
+    padding: 5px 0;
+    background-color: #e4e114;
+    color: #00686C;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    align-items: center;
+}
 
 
 

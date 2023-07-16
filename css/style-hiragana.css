@@ -120,7 +120,7 @@ main{
 .texto-banner {
     position: absolute;
     top: 30%;
-
+    border-radius: 50%;
     width: 20%;
     right: 8%;
     transform: translate(-50%, -50%);
@@ -222,8 +222,7 @@ aside.cards section.card h2{
     height: 30px;
 }
 
-/*Card footer*/
-/* Link dos CARDS */
+
 .card-footer-1 a{
     position: relative;
     text-decoration: none;    
@@ -308,6 +307,7 @@ aside.cards section.card h2{
 .container-conteudo h3{
     color: #00686C;
 }
+
 span.dakuten{
     font-size: 24px;
 }
